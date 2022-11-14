@@ -14,7 +14,7 @@ export default class Header extends Component {
 
         return (
             <>
-                <Navbar fixed="top" collapseOnSelect expand="md" bg="dark" variant="dark">
+                <Navbar fixed="sticky" collapseOnSelect expand="md" bg="dark" variant="dark">
                     <Container>
                         <Navbar.Brand href="/">
                             <img
@@ -30,7 +30,7 @@ export default class Header extends Component {
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
                                 <Nav.Link href="/">HOME</Nav.Link>
-                                <Nav.Link href="/about">ABOUT US</Nav.Link>
+                                <Nav.Link href="/about">API</Nav.Link>
                                 <Nav.Link href="/contacts">CONTACTS</Nav.Link>
                                 <Nav.Link href="/blog">BLOG</Nav.Link>
                             </Nav>
