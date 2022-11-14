@@ -14,7 +14,7 @@ export default class Header extends Component {
 
         return (
             <>
-                <Navbar fixed="sticky" collapseOnSelect expand="md" bg="dark" variant="dark">
+                <Navbar fixed="sticky" collapseOnSelect expand="md" className="mr-2" bg="dark" variant="dark">
                     <Container>
                         <Navbar.Brand href="/">
                             <img
@@ -35,7 +35,7 @@ export default class Header extends Component {
                                 <Nav.Link href="/blog">BLOG</Nav.Link>
                             </Nav>
 
-                            <Form inline>
+                            <Form inline-block>
                                 <FormControl
                                     type="text"
                                     placeholder="Search"

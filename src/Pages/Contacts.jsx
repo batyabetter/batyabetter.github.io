@@ -6,7 +6,7 @@ import { Button, Container, Form } from "react-bootstrap";
 export default class Contact extends Component {
     render(){
         return(
-            <Container>
+            <Container Container style= {{width:'1000px'}}>
                 <h1>Contact US</h1>
                 <Form>
                     <Form.Group controlId="formBasicEmail">

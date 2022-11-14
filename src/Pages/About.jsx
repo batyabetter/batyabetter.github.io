@@ -4,7 +4,6 @@ import { Container } from "react-bootstrap";
 
 export default class About extends Component {
 
-
     constructor(props){
         super(props);
         this.state = {
@@ -42,15 +41,17 @@ export default class About extends Component {
             return <p>Loading...</p>
         } else {
             return(
-                <Container style= {{width:'500px'}}>
+                <Container style= {{width:'960px'}}>
                 <ul className="ce">
                     {items.map(item =>(
-                        <li key= {item.name}>
+                        <li className="p-2 bg-light border" key= {item.name}>
                             {item.strDrink}
-                            <img alt="slovo" width="50" height="50" src={item.strDrinkThumb}/>
+                            <img className="pl-2" alt="car" width="50" height="50" src={item.strDrinkThumb}/>
                          </li>   
+                         
                     ))}
                 </ul>
+                        
                 </Container>
             )
         }
